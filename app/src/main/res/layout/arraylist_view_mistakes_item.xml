@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/question_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_text"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/selected_tv_const"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_text"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="italic"
+        android:text="@string/view_mistakes_user_answer"/>
+
+    <TextView
+        android:id="@+id/selected_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_text"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <TextView
+        android:id="@+id/correct_tv_const"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_text"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="italic"
+        android:text="@string/view_mistakes_correct_answer"/>
+
+    <TextView
+        android:id="@+id/correct_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_text"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="15dp"/>
+
+</LinearLayout>

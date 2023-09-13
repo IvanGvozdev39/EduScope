@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group
+        android:id="@+id/main_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_icon"
+            android:title="@string/home_toolbar_title" />
+        <item
+            android:id="@+id/nav_tests"
+            android:icon="@drawable/ic_tests_icon"
+            android:title="@string/tests_toolbar_title" />
+        <item
+            android:id="@+id/nav_summary"
+            android:icon="@drawable/ic_summary_icon"
+            android:title="@string/summary_toolbar_title" />
+        <item
+            android:id="@+id/nav_statistics"
+            android:icon="@drawable/ic_menu_statistics_hq"
+            android:title="@string/statistics_toolbar_title" />
+        <item
+            android:id="@+id/nav_notes"
+            android:icon="@drawable/ic_menu_notes"
+            android:title="@string/notes_toolbar_title"/>
+    </group>
+
+    <group
+        android:id="@+id/subject_selection_group"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_subject_select"
+            android:icon="@drawable/back"
+            android:title="@string/subject_select_title" />
+    </group>
+
+    <group
+        android:id="@+id/account_group"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_logout_hq"
+            android:title="@string/logout_toolbar_title" />
+    </group>
+
+</menu>

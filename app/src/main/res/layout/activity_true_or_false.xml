@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tests.TrueOrFalseActivity"
+    android:background="@color/BSUIR_Blue"
+    android:orientation="vertical"
+    android:theme="@style/Theme.PhSc.NoActionBar">
+
+  <LinearLayout
+      android:id="@+id/quiz_itself"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/BSUIR_Blue"
+        android:elevation="4dp">
+
+
+      <ImageView
+          android:background="@color/transparent"
+          android:id="@+id/back_button"
+          android:layout_width="36dp"
+          android:layout_height="36dp"
+          android:layout_centerVertical="true"
+          android:layout_marginStart="15dp"
+          app:srcCompat="@drawable/back_button"
+          android:contentDescription="@string/back_button_description" />
+
+      <TextView
+          android:id="@+id/actionbar_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:fontFamily="sans-serif-medium"
+          android:text="@string/mode3"
+          android:textColor="@color/white"
+          android:textSize="18sp"
+          tools:ignore="RelativeOverlap" />
+
+
+      <Chronometer
+          android:layout_alignParentEnd="true"
+          android:layout_centerVertical="true"
+          android:gravity="center"
+          android:layout_marginEnd="15dp"
+          android:id="@+id/chronometer"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="16sp"
+          android:fontFamily="sans-serif-medium"
+          android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progressDrawable="@drawable/custom_progress_bar"
+        android:id="@+id/progress_bar_tests"/>
+
+    <TextView
+        android:id="@+id/question_number"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/round_back_white_10"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/dark_text"/>
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_back_white_10"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:minHeight="150dp"
+        android:contentDescription="@string/question_description"
+        android:padding="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/dark_text"
+        android:textSize="18sp"/>
+  </LinearLayout>
+
+  <LinearLayout
+      app:layout_constraintBottom_toBottomOf="parent"
+      android:layout_width="match_parent"
+      android:layout_height="250dp"
+      android:layout_gravity="center_horizontal"
+      android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/option1"
+        android:layout_width="280dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="18sp"
+        android:background="@drawable/button_green_when_pressed_green_stroke_round_10"
+        android:text="@string/tests_true"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/option2"
+        android:layout_width="280dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="18sp"
+        android:background="@drawable/button_red_when_pressed_red_stroke_round_10"
+        android:text="@string/tests_false"/>
+
+  </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

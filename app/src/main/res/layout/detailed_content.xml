@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    app:theme="@style/ThemeOverlay.AppCompat.navTheme">
+
+    <FrameLayout
+        android:id="@+id/frame_layout_philosophers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,UselessParent">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_philosophers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/image_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/BSUIR_Blue"
+                android:orientation="horizontal"
+                android:transitionName="image_transition">
+
+
+                <ImageView
+                    android:id="@+id/detailed_content_imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/detailed_image_philosophers" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_views_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/detailed_content_philosophers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:textIsSelectable="true"
+                android:textColor="@color/dark_text"
+                android:textSize="18sp"
+                android:contentDescription="@string/detailed_philosophers_text1_description"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

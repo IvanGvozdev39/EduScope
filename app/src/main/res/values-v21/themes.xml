@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.PhSc.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/BSUIR_Blue</item>
+        <item name="android:colorEdgeEffect">@color/BSUIR_Blue</item>
+    </style>
+
+    <style name="ThemeOverlay.AppCompat.navTheme">
+        <!-- Color of text and icon when SELECTED -->
+        <item name="colorPrimary">@color/BSUIR_Blue</item>
+    </style>
+
+    <style name="Splash_Screen">
+        <item name="android:windowBackground">@color/BSUIR_Blue</item>
+    </style>
+
+</resources>

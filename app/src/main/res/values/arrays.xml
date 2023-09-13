@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="philosophers_array">
+        <item>Аристотель</item>
+        <item>Бергсон, Анри</item>
+        <item>Беркли, Джордж</item>
+        <item>Бруно, Джордано</item>
+        <item>Будда Шакьямуни</item>
+        <item>Бэкон, Фрэнсис</item>
+        <item>Вольтер</item>
+        <item>Гегель, Георг</item>
+        <item>Гераклит</item>
+        <item>Гоббс, Томас</item>
+        <item>Дидро, Дени</item>
+        <item>Ильин, Иван Александрович</item>
+        <item>Иоанн Златоуст</item>
+        <item>Кант, Иммануил</item>
+        <item>Кирилл Туровский</item>
+        <item>Конт, Огюст</item>
+        <item>Конфуций (Кун-цзы)</item>
+        <item>Кьеркегор, Сёрен</item>
+        <item>Ламетри, Жюльен Офре де</item>
+        <item>Лао-цзы</item>
+        <item>Лейбниц, Готфрид Вильгельм</item>
+        <item>Локк, Джон</item>
+        <item>Маркс, Карл</item>
+        <item>Мах, Эрнст</item>
+        <item>Монтескьё, Шарль Луи де</item>
+        <item>Ницше, Фридрих</item>
+        <item>Оккам, Уильям</item>
+        <item>Платон</item>
+        <item>Руссо, Жан-Жак</item>
+        <item>Смит, Адам</item>
+        <item>Сократ</item>
+        <item>Соловьев, Владимир Сергеевич</item>
+        <item>Солоневич, Иван Лукьянович</item>
+        <item>Фейербах, Людвиг Андреас</item>
+        <item>Фома Аквинский</item>
+        <item>Шопенгауэр, Артур</item>
+        <item>Энгельс, Фридрих</item>
+        <item>Юм, Дэвид</item>
+    </string-array>
+
+    <string-array name="summary_array">
+        <item>1. Философия как социокультурный феномен. Предмет, структура и функции философии. Философия и мировоззрение.</item>
+        <item>2. Философия Древнего мира: Древняя Индия, Древний Китай, Древняя Греция.</item>
+        <item>3. Статус и функции философии в эпоху Средневековья и Возрождения.</item>
+        <item>4. Философия Нового времени и эпохи Просвещения.</item>
+        <item>5. Немецкая классическая философия: Кант, Гегель, Фейербах.</item>
+        <item>6. Материалистическое понимание истории в философии К. Маркса.</item>
+        <item>7. Становление неклассической европейской философии XIXв. Философия иррационализма (А. Шопенгауэр, С. Кьеркегор, Ф. Ницше) и проблемы человеческого существования в экзистенциализме.</item>
+        <item>8. Позитивизм XIX-XX вв. о предмете и задачах философии: этапы развития и эволюция идей.</item>
+        <item>9. Русская философия XIX — нач. XX вв. Славянофилы и западники.</item>
+        <item>10. Особенности философской мысли Беларуси. Основные этапы ее развития.</item>
+        <item>11. Онтология как философское учение о бытии. Формы бытия и их взаимосвязь. Диалектика как философская теория развития.</item>
+        <item>12. Понятие материи в философии и науке. Пространство, время и движение как атрибуты материального бытия.</item>
+        <item>13. Философия природы. Идея коэволюции общества и природы. Роль синергетики в постижении бытия.</item>
+        <item>14. Проблема человека в философии. Основные концепции и направления исследования.</item>
+        <item>15. Понятие сознания и его структура. Сознание и бессознантельное. Проблема языка и искусcтвенного интеллекта.</item>
+        <item>16. Проблема познаваемости мира и истины в истории философии. Философские концеации истины.</item>
+        <item>17. Наука как высшая форма познания. Уровни, формы и методы научного познания.</item>
+        <item>18. Социальная философия, ее предмет и проблемы. Эволюция представлений об обществе в истории философии.</item>
+        <item>19. Общество как система. Основные сферы жизнедеятельности общества.</item>
+    </string-array>
+    
+    <string-array name="spinners_all_topics_array">
+        <item>Билет 1</item>
+        <item>Билет 2</item>
+        <item>Билет 3</item>
+        <item>Билет 4</item>
+        <item>Билет 5</item>
+        <item>Билет 6</item>
+        <item>Билет 7</item>
+        <item>Билет 8</item>
+        <item>Билет 9</item>
+        <item>Билет 10</item>
+        <item>Билет 11</item>
+        <item>Билет 12</item>
+        <item>Билет 13</item>
+        <item>Билет 14</item>
+        <item>Билет 15</item>
+        <item>Билет 16</item>
+        <item>Билет 17</item>
+        <item>Билет 18</item>
+        <item>Билет 19</item>
+        <item>Билет 20</item>
+    </string-array>
+
+
+    
+    <string-array name="text_size_array">
+        <item>Крупный</item>
+        <item>Обычный</item>
+        <item>Мелкий</item>
+    </string-array>
+
+    <string-array name="animation_pref_array">
+        <item>@string/animation_pref_option1</item>
+        <item>@string/animation_pref_option2</item>
+        <item>@string/animation_pref_option3</item>
+    </string-array>
+    
+    <string-array name="animation_quiz_results_pref_array">
+        <item>@string/animation_quiz_results_option1</item>
+        <item>@string/animation_quiz_results_option2</item>
+    </string-array>
+
+    <string-array name="voice_recognition_language_pref_array">
+        <item>@string/default_language</item>
+        <item>@string/russian</item>
+        <item>@string/english</item>
+    </string-array>
+
+
+    <string-array name="months_array">
+        <item>@string/january</item>
+        <item>@string/february</item>
+        <item>@string/march</item>
+        <item>@string/april</item>
+        <item>@string/may</item>
+        <item>@string/june</item>
+        <item>@string/july</item>
+        <item>@string/august</item>
+        <item>@string/september</item>
+        <item>@string/october</item>
+        <item>@string/novemver</item>
+        <item>@string/december</item>
+    </string-array>
+
+    <string-array name="months_array_genitive_case">
+        <item>@string/january_gc</item>
+        <item>@string/february_gc</item>
+        <item>@string/march_gc</item>
+        <item>@string/april_gc</item>
+        <item>@string/may_gc</item>
+        <item>@string/june_gc</item>
+        <item>@string/july_gc</item>
+        <item>@string/august_gc</item>
+        <item>@string/september_gc</item>
+        <item>@string/october_gc</item>
+        <item>@string/novemver_gc</item>
+        <item>@string/december_gc</item>
+    </string-array>
+    
+</resources>

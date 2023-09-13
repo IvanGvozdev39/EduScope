@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notes.CreateNoteActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/BSUIR_Blue"
+        android:elevation="@dimen/_3sdp">
+
+        <EditText
+            android:id="@+id/create_note_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/round_back_white_10"
+            android:hint="@string/note_title"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textColor="@color/dark_text"
+            android:textSize="20sp" />
+
+        <FrameLayout
+            android:id="@+id/color_indicator"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="14dp"
+            android:layout_toLeftOf="@id/more_button_editnote"
+            android:background="@drawable/note_roundback_grey_10" />
+
+        <ImageView
+            android:id="@+id/more_button_editnote"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="13dp"
+            android:src="@drawable/ic_baseline_more_vert_24" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:elevation="@dimen/_3sdp"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/round_back_not_so_light_grey_10"
+            android:iconifiedByDefault="false"
+            android:queryHint="@string/search_by_content" />
+
+        <ImageView
+            android:id="@+id/search_cancel_cross_image"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@drawable/cross_devastated" />
+
+        <!--        <ImageButton-->
+        <!--            android:id="@+id/arrow_up"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="35dp"-->
+        <!--            android:layout_toLeftOf="@id/arrow_down"-->
+        <!--            android:src="@drawable/ic_baseline_keyboard_arrow_up_24"-->
+        <!--            android:background="@android:color/transparent"/>-->
+
+        <!--        <ImageButton-->
+        <!--            android:id="@+id/arrow_down"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="35dp"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"-->
+        <!--            android:background="@android:color/transparent"-->
+        <!--            android:paddingStart="10dp"/>-->
+
+        <TextView
+            android:id="@+id/navigation_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_view"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_horizontal"
+            android:text="@string/found_0"
+            android:textColor="@color/dark_text"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    <com.eduscope.eduscope.notes.MyNestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_layout"
+        android:fillViewport="true">
+
+        <EditText
+            android:id="@+id/create_note_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|start"
+            android:background="@color/transparent"
+            android:hint="@string/note_content"
+            android:padding="15dp"
+            android:textColor="@color/dark_text"
+            android:textSize="18sp" />
+
+    </com.eduscope.eduscope.notes.MyNestedScrollView>
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/floating_button_pulse"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="23dp"
+        android:visibility="gone"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/floating_button_pulse" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/edit_note_floating_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/chosen_answer_option_grey"
+        android:elevation="0dp"
+        android:src="@drawable/ic_baseline_keyboard_voice_24"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:maxImageSize="40dp" />
+
+</RelativeLayout>

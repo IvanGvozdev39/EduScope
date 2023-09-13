@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?> <!-- Для настроек -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory android:title="@string/text_size_preference_category_title"/>
+
+    <ListPreference
+        android:defaultValue="Обычный"
+        android:entries="@array/text_size_array"
+        android:entryValues="@array/text_size_array"
+        android:key="text_size_preference"
+        android:title="@string/text_size_preference_title"
+        android:summary="@string/text_size_preference_summary"
+        android:negativeButtonText="@string/back"/>
+
+    <PreferenceCategory android:title="@string/appearance_preference_category_title"/>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="theme_switch_preference"
+            android:title="@string/dark_theme_preference_title" />
+
+    <PreferenceCategory android:title="@string/animations_preference_category_title"/>
+
+    <ListPreference
+        android:defaultValue="@string/animation_pref_option2"
+        android:entries="@array/animation_pref_array"
+        android:entryValues="@array/animation_pref_array"
+        android:key="animation_preference"
+        android:title="@string/animation_switch_preference_title"
+        android:summary="@string/animation_switch_preference_summary"
+        android:negativeButtonText="@string/back"/>
+    <ListPreference
+        android:defaultValue="@string/animation_quiz_results_option1"
+        android:entries="@array/animation_quiz_results_pref_array"
+        android:entryValues="@array/animation_quiz_results_pref_array"
+        android:key="animation_quiz_results_preference"
+        android:title="@string/animation_quiz_results_title"
+        android:summary="@string/animation_quiz_results_summary"
+        android:negativeButtonText="@string/back"/>
+
+    <PreferenceCategory android:title="@string/other_preference_category_title"/>
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="notes_when_launched_switch_preference"
+        android:title="@string/notes_when_launched"
+        android:summary="@string/notes_when_launched_preference_summary"/>
+
+    <ListPreference
+        android:defaultValue="@string/default_language"
+        android:entries="@array/voice_recognition_language_pref_array"
+        android:entryValues="@array/voice_recognition_language_pref_array"
+        android:key="voice_recognition_language_preference"
+        android:title="@string/voice_recognition_language_title"
+        android:negativeButtonText="@string/back"/>
+
+</PreferenceScreen>
